@@ -17,10 +17,12 @@ public class User {
     @NotEmpty
     @Size(min = 2, max = 10)
     private String lastName;
+    @NotEmpty
     @Pattern(regexp="(^$|[0-9]{10})")
     private String phoneNumber;
     @Min(18)
     private int age;
+    @NotEmpty
     @Email
     private String email;
 
